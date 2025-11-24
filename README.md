@@ -2,7 +2,7 @@
 
 **Welcome to my GitHub repository!** 🙏
 
-### Today we are going to learn the four core concepts of OOP. These principles are essential for every software developer because they provide the foundation for building real-world applications using a structured and maintainable approach.
+Today we are going to learn the four core concepts of OOP. These principles are essential for every software developer because they provide the foundation for building real-world applications using a structured and maintainable approach.
 
 
 # Object-Oriented Programming (OOP) – Complete Guide with Real-Life Examples
