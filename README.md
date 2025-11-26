@@ -375,19 +375,85 @@ Commonly 3 types of Design pattern.
 A Singleton ensures that only one instance of a class exists throughout your entire application.
 
 ### Why Singleton?
-You want global access to that resource.
-You want to prevent creating multiple objects unnecessarily.
+If you need global access to specific logic, you can create a Singleton instance.
+
 ### use cases:
 👈🏼 Database connection
+
 👈🏼 Logger service
+
 👈🏼 Configuration manager
+
 👈🏼 Caching
+
 👈🏼 Authentication
 
 Example:
 You have one water tank in your house.
 Everyone (kitchen, bathroom, garden tap) gets water from the same tank.
 Factory Design Pattern
+
+```js
+
+class Database{
+    // Business login of db connection
+    
+}
+
+const bd = new Database();
+
+```
+
+#### Fectory Design Pattern -
+A method that creates and returns objects for you.
+It is used to create different types of objects using one common interface.
+
+Instead of:
+
+```js
+class Dog{
+   speak() { return "Bark!"; }
+}
+class Cat{
+   speak() { return "Meow!"; }
+}
+class Cow{
+   speak() { return "Baw"; }
+}
+
+new Dog()
+new Cat()
+new Cow()
+
+```
+You use:
+
+```js
+
+class AnimalFactory{
+    static createAnimal(type){
+         if(type=='Dog')  return new Dog();
+         if(type=='Cat')  return new Cat();
+         if(type=='Cow')  return new Cow();
+    }
+}
+
+class Dog{
+   speak() { return "Bark!"; }
+}
+class Cat{
+   speak() { return "Meow!"; }
+}
+class Cow{
+   speak() { return "Baw"; }
+}
+
+
+AnimalFactory.createAnimal("dog"); // Bark
+AnimalFactory.createAnimal("cat"); // Meow
+AnimalFactory.createAnimal("cow"); // Baw
+
+```
 
 
 ### 2. Structural Design Pattern
